@@ -5,7 +5,7 @@ defined( 'ABSPATH' ) or exit;
  * Plugin Name: Label Timezones
  * Plugin URI: https://github.com/csalzano/label-timezones
  * Description: Label the timezones at the bottom of the Timezone drop down in Settings > General
- * Version: 0.1.0
+ * Version: 0.1.1
  * Author: Corey Salzano
  * Author URI: https://profiles.wordpress.org/salzano
  * Text Domain: label-timezones
@@ -14,7 +14,7 @@ defined( 'ABSPATH' ) or exit;
  * License URI: http://www.gnu.org/licenses/gpl-2.0.html
  */
 
-function maybe_output_timezone_labeling_javascript( $hook )
+function maybe_output_timezone_labeling_javascript()
 {
 	global $pagenow;
 	if( 'options-general.php' != $pagenow )
